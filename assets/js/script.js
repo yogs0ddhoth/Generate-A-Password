@@ -5,27 +5,13 @@ var charsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var charsLower = "abcdefghijklmnopqrstuvwxyz";
 var charsNumeric = "0123456789";
 var charsSpecial = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+var charBank = "";
 
 function generatePassword() {
   console.log("Hey! You clicked the button!");
 
-  /* 
-  open prompts { 
-    series of password criteria {
-      choseLength. length of 8 <= 128 characters;
-    }
-      
-    confirm characterType
-    [lowercase, uppercase, mumeric, special char];
-    
-    validate charType -> log var?  
-    
-  }
-  */
   var passwordLength = prompt("Choose your password length \n(Choose a number between 8 and 128)");
   console.log(passwordLength);
-
-  var charBank = "";
 
   var confirmUpper = window.confirm("Do you want your password to include Uppercase Letters?");
   if (confirmUpper) {
@@ -51,7 +37,17 @@ function generatePassword() {
     console.log(charBank);
   }
 
-  return "Generated Password"
+  var bankLength = charBank.length;
+  console.log(bankLength);
+
+  var generatedPassword = "";
+
+  for (var i = 0; i < passwordLength; i++) {
+    generatedPassword += charBank.charAt(Math.floor(Math.random()*bankLength));
+  }
+  console.log(generatedPassword);
+  return generatedPassword;
+  
 }
 
 function writePassword() {
@@ -59,7 +55,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  
+  console.log(password);
 }
 
 // Add event listener to generate button
