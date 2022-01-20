@@ -1,4 +1,3 @@
-
 var generateBtn = document.querySelector("#generate");
 
 var charsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -35,7 +34,7 @@ function generatePassword() {
   if (confirmSpecial) {
     charBank += charsSpecial;
     console.log(charBank);
-  }
+  } 
 
   var bankLength = charBank.length;
   console.log(bankLength);
