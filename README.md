@@ -5,36 +5,37 @@ https://yogs0ddhoth.github.io/Make-A-Password/
 ## The Application
 When opened, the application in its current styling will appear as follows:
 
-![The Password Generator application displays a red button to "Generate Password".](assets\images\preview.png)
+![The Password Generator application displays a red button to "Generate Password".](./assets/images/preview.png)
 
 ### Functionality 
 
 When the "Generate Password" button is clicked, the program will run:
 
-![Select Password Length.](assets\images\password-length.png)
+![Select Password Length.](./assets/images/password-length.png)
 
 The user will be prompted to select a password length between 8 and 128 characters.
 
-![Error! Choose a number between 8 and 128.](assets\images\error1.png) 
+![Error! Choose a number between 8 and 128.](./assets/images/error1.png) 
 
 If the password length criteria are not met, an error will be displayed, and the program will restart. 
 
 Once the length is chosen, the user will be prompted to select character types: 
 
-![Do you want your password to include Uppercase Letters?](assets\images\uppercase-check.png)
-![Do you want your password to include Lowercase Letters?](assets\images\lowercase-check.png)
-![Do you want your password to include Numbers?](assets\images\number-check.png)
-![Do you want your password to include Special Characters?](assets\images\special-char-check.png) 
+![Do you want your password to include Uppercase Letters?](./assets/images/uppercase-check.png)
+![Do you want your password to include Lowercase Letters?](./assets/images/lowercase-check.png)
+![Do you want your password to include Numbers?](./assets/images/number-check.png)
+![Do you want your password to include Special Characters?](./assets/images/special-char-check.png) 
 
 Failure to do so will prompt an error, and the program will restart.
 
-![Error! Choose Characters](assets\images\error2.png) 
+![Error! Choose Characters](./assets/images/error2.png) 
 
-If all steps are followed, and all criteria are met, the program will generate a password and display it in the application 
-![Password](assets\images\password.png) 
+If all steps are followed, and all criteria are met, the program will generate a password and display it in the application. 
+![Password](./assets/images/password.png) 
 
-All major steps are logged in the console for ease of debugging 
-![console](assets\images\console.png) 
+All major steps are logged in the console for ease of debugging.
+
+![console](./assets/images/console.png) 
 
 ### Future Updates 
 
