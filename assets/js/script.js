@@ -5,7 +5,7 @@ let charsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let charsLower = "abcdefghijklmnopqrstuvwxyz";
 let charsNumeric = "0123456789";
 let charsSpecial = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-var charBank = "";
+
 
 // allows user to select character types:
 function chooseCharacters() {
@@ -34,7 +34,7 @@ function chooseCharacters() {
 
 function generatePassword() {
   console.log("Hey! You clicked the button!");
-  
+  var charBank = "";
   var generatedPassword = "";
   var passwordLength = prompt("Choose your password length \n(Choose a number between 8 and 128)");
   Number(passwordLength);
